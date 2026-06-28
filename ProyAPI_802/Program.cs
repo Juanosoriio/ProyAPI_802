@@ -12,9 +12,10 @@ builder.Services.AddCors(options =>
     options.AddPolicy("PermitirFrontend", policy =>
     {
         policy.WithOrigins(
-                "http://localhost:5173",
-                "https://proyapi-802.onrender.com"
-            )
+    "http://localhost:5173",
+    "https://proyapi-802.onrender.com",
+    "https://tienda-frontend-omega.vercel.app"
+)
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
